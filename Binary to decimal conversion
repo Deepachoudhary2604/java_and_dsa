@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int decimal_num=0;
+        int mul=1;
+        while(n>0){
+            int r=n%10;
+            decimal_num=decimal_num+(r*mul);
+            mul=mul*2;
+            n=n/10;
+        }
+        System.out.println(decimal_num);
+    }
+}
